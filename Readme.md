@@ -1,25 +1,59 @@
-# EVAM'S CAN BUS
-Contains the arduino code for the different nodes in the canbus
+# EVAM 1 Firmware
+
+> Source code for the EVAM 1's CAN bus firmware
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6837599/138331854-9dfa00b7-021b-4b2a-a48f-78b1f74af131.png" width="20%" \>
+</p>
 
 
-### Folders
-`Notes\` contains some of my notes and also `CAN Bus Messages.xlsx` which describes the structure of the CAN Bus (namely the nodes and messages).
+- [ ] 🏎️ Automotive Hardware
+- [x] 🛞 Automotive Software
+- [ ] 🖥️ Supporting Software and Simulations
+- [ ] 📚 Code Library
+- [ ] 🛠 Helper Script
+- [ ] 📖 Documentation / Datasheets
+- [ ] ❓ Miscellaneous / Uncategorized
+
+This repository contains the source code for the EVAM 1's custom CAN bus nodes.
 
 
-`Nodes\` contains the arduino sketches for the nodes:
- - BMS (Battery Management System) (*tested, working*)
- - ECU (Engine Control Unit) (*done, but not fully tested*)
--- not tested with all 4 motors connected
- - Wheel Nodes (*roughly done*)
--- Dual motor controller has been tested with 2 motor controllers, but single hasn't been developed. Should just be a case of copying the code over, changing the pins assigned, and disabling the second motor controller functionality.
- - SAS (Steering Angle Sensor) (*done*)
- - TPS (Throttle (and Brake) Position Sensor) (*done, but brakes untested*)
- - Front and Rear Lights (*rear light done, front to be done*)
- -  ~~IMU (Inertial Measurement Unit) (*will probably not be implemented*)~~
- 
- 
- > Refer to `Notes\CAN Bus Messages.xlsx` for more information about each node.
- 
- **Not all the nodes have been developed yet though**
- 
- The code for the dashboard node can be found at [the evam-dashboard repo](https://github.com/thespacemanatee/evam-dashboard)
+## Directories
+
+* `CANBus 2/Nodes` - Arduino programs for each subsystem
+    * `/TPS/TPS_code` - Throttle Position Sensor
+    * `/BMS/BMS_code` - Battery Management System
+    * `/Wheels` - All code related to propulsion
+        * `ECU_code` - Engine Control Unit
+        * `FW_code` - Front Wheels, corresponding to MCU_Double in the electronics design
+        * `RLW_code` - Rear Left Wheel, corresponding to MCU_Single in the electronics design
+        * `RRW_code` - Rear Right Wheel, corresponding to MCU_Single in the electronics design
+    * `/LED/RL_Code` - Rear lights code (not implemented in actual vehicle)
+    * `/SAS/SAS_code` - Steering Angle Sensor, originally meant for torque vectoring. Currently not used
+    * `/HUD/HUD_code` - Heads Up Display / Dashboard
+* `CANBus 2/Test Sketches` - Original test programs for Arduino programs
+* `Notes` - Documentation used during this project
+
+
+> Refer to `Notes/CAN Bus Messages.xlsx` for more information about each node.
+
+
+## Documentation
+
+Please refer to EVAM internal OneDrive for further documentation, including specific datasheets on the electrical system components
+
+
+## Caveats
+
+No known caveats yet
+
+
+## Known issues
+
+No known issues yet
+
+
+## Contributing
+
+If you encounter any issues with this repository, please do not hesitate to open an issue.
+

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="arduino"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 Debug"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 Production"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.github/ISSUE_TEMPLATE/bug_report.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.github/ISSUE_TEMPLATE/custom.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.github/ISSUE_TEMPLATE/feature_request.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.gitlab-ci.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/.travis.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/CODE_OF_CONDUCT.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/CONTRIBUTING.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/License.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/OBDII_PIDs/OBDII_PIDs.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/canbus-monitor/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/canbus-monitor/canbus-monitor.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/gpioRead/gpioRead.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/gpioWrite/gpioWrite.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_Blink/receive_Blink.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_check/receive_check.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_interrupt/receive_interrupt.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_interruptFD/receive_interruptFD.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_monitor/receive_monitor.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/receive_sleep/receive_sleep.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/recv_sd/recv_sd.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send/send.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/sendFD/sendFD.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_Blink/send_Blink.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_Blink_ROS/send_Blink_ROS.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_random/send_random.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_receive/send_receive.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_receiveFD/send_receiveFD.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/send_sleep/send_sleep.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/set_mask_filter_recv/set_mask_filter_recv.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/examples/set_mask_filter_send/set_mask_filter_send.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/keywords.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/library.json">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/can-serial.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/can-serial.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2515_can.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2515_can.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2515_can_dfs.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2518fd_can.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2518fd_can.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp2518fd_can_dfs.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp_can.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/lib/Seeed_Arduino_CAN-master/src/mcp_can.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/src/EVAM.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/src/EVAM_CAN.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/src/EVAM_CAN.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/src/utils.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

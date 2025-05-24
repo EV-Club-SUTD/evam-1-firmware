@@ -8,7 +8,7 @@
 #include "can_ids.h"
 
 //debug mode: to print info to terminal
-#define DEBUG
+// #define DEBUG
 
 //timings
 #define THROTTLE_TIMEOUT 300    //timeout for not recieving throttle messages before an error is raised

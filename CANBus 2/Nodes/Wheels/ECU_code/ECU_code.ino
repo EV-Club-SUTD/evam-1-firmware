@@ -565,8 +565,10 @@ void loop(){
  
     }
     if(millis() - lastPrintMillis > PRINT_INTERVAL){
+        #ifdef DEBUG
         printThrottles();
         printSpeed();
+        #endif
         lastPrintMillis = millis();
     }
 }

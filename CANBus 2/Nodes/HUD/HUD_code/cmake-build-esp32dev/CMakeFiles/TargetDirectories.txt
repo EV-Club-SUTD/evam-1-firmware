@@ -1,0 +1,5 @@
+/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-esp32dev/CMakeFiles/rebuild_cache.dir
+/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-esp32dev/CMakeFiles/edit_cache.dir
+/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-esp32dev/CMakeFiles/Z_DUMMY_TARGET.dir
+/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-esp32dev/CMakeFiles/Debug.dir
+/Users/thespacemanatee/Documents/GitHub/evam-dashboard/arduino/cmake-build-esp32dev/CMakeFiles/Production.dir
