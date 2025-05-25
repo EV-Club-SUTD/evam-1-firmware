@@ -35,7 +35,7 @@ This repository contains the source code for the EVAM 1's custom CAN bus nodes.
 * `Notes` - Documentation used during this project
 
 
-> Refer to `Notes/CAN Bus Messages.xlsx` for more information about each node.
+> Refer to `CANBus 2/CAN Bus Messages.xlsx` for specific information about each node. This document provides detailed information on the CAN messages, message IDs, descriptions, senders, receivers, and message formats.
 
 
 ## Documentation
