@@ -12,10 +12,10 @@
 - [ ] 🖥️ Supporting Software and Simulations
 - [ ] 📚 Code Library
 - [ ] 🛠 Helper Script
-- [ ] 📖 Documentation / Datasheets
+- [x] 📖 Documentation / Datasheets
 - [ ] ❓ Miscellaneous / Uncategorized
 
-This repository contains the source code for the EVAM 1's custom CAN bus nodes.
+This repository contains the source code and documentation for the EVAM 1's custom CAN bus nodes.
 
 
 ## Directories
@@ -40,7 +40,20 @@ This repository contains the source code for the EVAM 1's custom CAN bus nodes.
 
 ## Documentation
 
-Please refer to EVAM internal OneDrive for further documentation, including specific datasheets on the electrical system components
+For other documentation, please refer to EVAM internal OneDrive for further documentation, including specific datasheets on the electrical system components
+
+### Design Explanations
+
+* [Throttle Position Sensor](docs/Explanations/ThrottlePositionSensor.md)
+* [Battery Management System](docs/Explanations/ThrottlePositionSensor.md)
+* [Engine Control Unit](docs/Explanations/ThrottlePositionSensor.md)
+* [Battery Management System](docs/Explanations/ThrottlePositionSensor.md)
+
+
+### References
+
+* [Full list of CAN bus messages](docs/References/CAN%20Bus%20Messages.xlsx): Complete list of nodes, what messages they transmit and receive, as well as priority of individual CAN message types
+* [CAN message frame format](docs/References/CAN_notes.pdf): Explains how CAN messages are framed
 
 
 ## Caveats
