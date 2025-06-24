@@ -2,7 +2,9 @@
 
 This article aims to explain the software design of the Throttle Position Sensor (TPS) subsystem in the EVAM 1.0 CANBus 1 and 2 implementation.
 
-[[_TOC_]]
+
+[TOC]
+
 
 ## Background
 
@@ -31,21 +33,14 @@ It is a safety critical component with a recommended rating of ASIL-B at the min
 |Function Name |Input Parameters |Outputs |Description |
 |:--- |:--- |:--- |:--- |
 |productCode|`parameter1: string`|a string containing...|Code of the document product to return the schema for. <br> <ul><li>Here is a bulleted list with a \| (pipe) inside a table.</li><li>Another bulleted list.<ul><li>An indented list</li></ul></li><li>Back to the list.</li></ul> |
-|||||
+
 
 ### Known Bugs
 
 > This section contains all the known bugs spotted in the code
 
+
 ## Improvements and future plans
 
 > What can be fixed/improved in the future (e.g. for CANBus 3.0)
 
-- General System Requirements (what the system is SUPPOSED to look like)
-    - System Requirements: what it’s expected to do
-    - System Interfaces: how this interfaces with other parts
-- Implementation Details (what the system CURRENTLY looks like)
-    - Overall system description
-    - Function descriptions (on a per function basis): what each function does, the input and output variables
-    - Known bugs
-- Improvement plan (what should be fixed in the future)
