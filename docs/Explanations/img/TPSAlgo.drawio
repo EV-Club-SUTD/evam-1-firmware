@@ -1,0 +1,71 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="xcAhWBtiVjObIqOwqNsL">
+    <mxGraphModel dx="887" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-20" value="&lt;font face=&quot;Courier New&quot;&gt;loop()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="69.91" y="450" width="320" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-17" value="&lt;font face=&quot;Courier New&quot;&gt;setup()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="69.91" y="120" width="320" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-1" target="784bLGKqiE0oy2VdMyuQ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-1" value="&lt;font face=&quot;Courier New&quot;&gt;setupCAN()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Performs setup tasks for CAN communications, including:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Setting initial values of messages&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Resetting the CAN controller&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Setting the bitrate and oscillator configurations&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Setting normal mode on the CAN controller&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="150" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Main program algorithm&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="57.41" y="10" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-7" target="784bLGKqiE0oy2VdMyuQ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-7" value="&lt;font&gt;Start/Reset&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="169.91" y="60" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-10" target="784bLGKqiE0oy2VdMyuQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-10" value="&lt;font face=&quot;Courier New&quot;&gt;sendStatus(1)&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Sends a &quot;good&quot; health status through the CAN interface&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="330" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-12" target="784bLGKqiE0oy2VdMyuQ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-12" value="&lt;font face=&quot;Courier New&quot;&gt;readIncomingMessages()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;Checks for and reads any incoming CAN messages, specifically the&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;NODE_STATUS_REQUEST_MSG_ID&lt;/font&gt; message.&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;If that message exists, send the current health status onto the CAN bus.&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="480" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-21" target="784bLGKqiE0oy2VdMyuQ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-21" value="&lt;font face=&quot;Courier New&quot;&gt;readFilterThrottle()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;Performs an analog read of the throttle pedal and filters it with an EWMA filter (optional).&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;Afterwards, store the throttle data in a local variable awaiting sending by the CAN message rate group.&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="660" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="784bLGKqiE0oy2VdMyuQ-24" target="784bLGKqiE0oy2VdMyuQ-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="1000" />
+              <mxPoint x="420" y="1000" />
+              <mxPoint x="420" y="440" />
+              <mxPoint x="230" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-24" value="&lt;font face=&quot;Courier New&quot;&gt;readFilterBrake()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;Performs an analog read of the brake pedal.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin: 0px 16px 0px 20px;&quot;&gt;⚠️ This function is partially implemented and should be removed since we do not utilise brake-by-wire.&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="830" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-27" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Rate groups&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;fontColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry x="425" y="10" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-28" value="Every&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;MSG_INTERVAL &lt;/font&gt;(10&amp;nbsp;milliseconds):" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=#3333FF;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-29" value="&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;mcp2515.sendMessage(&amp;amp;canAccMsg)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Sends the data of the accelerator onto the CAN bus.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="150" width="280" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

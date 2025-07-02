@@ -3,9 +3,6 @@
 This article aims to explain the software design of the Throttle Position Sensor (TPS) subsystem in the EVAM 1.0 CANBus 1 and 2 implementation.
 
 
-[TOC]
-
-
 ## Background
 
 The throttle position sensor is an essential part of the electric vehicle, that senses the position of the throttle pedal and transmits that data to the rest of the CAN bus nodes. 
@@ -49,16 +46,14 @@ For the full list of sender, receiver and message rate information, please see t
 
 > This describes the current implementation in software 
 
-### Function references
-
-|Function Name |Input Parameters |Outputs |Description |
-|:--- |:--- |:--- |:--- |
-|productCode|`parameter1: string`|a string containing...|Code of the document product to return the schema for. <br> <ul><li>Here is a bulleted list with a \| (pipe) inside a table.</li><li>Another bulleted list.<ul><li>An indented list</li></ul></li><li>Back to the list.</li></ul> |
+![System description diagram](img/TPSAlgo.drawio.png)
 
 
 ### Known Bugs
 
 > This section contains all the known bugs spotted in the code
+
+No known bugs are spotted in the code as of yet.
 
 
 ## Improvements and future plans
@@ -69,4 +64,6 @@ For the full list of sender, receiver and message rate information, please see t
     * Nodes should broadcast its health status at a fixed interval of about 5 seconds, instead of upon every health state transition, as this ensures detection of node dropout (i.e. the node shuts down). Alternatively, health status should be determined by whether a node is still broadcasting its primary message (in our example, whether the TPS node is still broadcasting the throttle position data).
 * Unit testing:
     * Computation functions, such as functions for sensor input validation, should be unit tested properly before actual implementation. This is to avoid undefined or unexpected behavior with different parameters. 
+* Eliminate usage of magic constants:
+    * Many statements in code contains "magic constants", i.e. constants that are ill-defined or undocumented, resulting in difficulty in comprehension for anyone who is reviewing the code. 
 
