@@ -55,7 +55,7 @@ In the event of an error, the node will automatically send an error message thro
 No known bugs are spotted in the code as of yet.
 
 
-### Improvements and future plans
+## Improvements and future plans
 
 * Implementation of Reverse, Eco Mode, Lock and Boost
     * The current firmware does not utilize the boost, eco mode, lock and reverse pins of the ESC, and are currently set as floating pins. Future iterations may look into implementing these features. 
