@@ -24,8 +24,9 @@ The ECU runs on an Arduino Nano and the functions have been listed below.
 6. A function that has not been implemented is the lowering of throttle amount if battery current is too high. This is to prevent the battery from being overloaded.
 
 ### System Interfaces
-* **Interface 1 | Input | EEPROM**
+* **Interface 1 | Input/Output | EEPROM**
     * ECU reads EEPROM from saved data. This contains information on the power balance and power scale from the individual wheels.
+    * ECU updates EEPROM on the left-right and front-rear power balance and power scale values.
 * **Interface 2 | Input/Output | CAN Bus**
     * ECU interfaces with the other nodes using CAN Bus interface.
     * CAN Bus frequency is set to 500Kb/s
