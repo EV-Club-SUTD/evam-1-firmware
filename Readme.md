@@ -49,7 +49,7 @@ For other documentation, please refer to EVAM internal OneDrive for further docu
 * [Engine Control Unit](docs/Explanations/EngineControlUnit.md): Need assistance for describing Interface 3 (please remove this when completed)
 * [Battery Management System](docs/Explanations/ThrottlePositionSensor.md)
 * Wheel Units
-    * [Forward Wheels](docs/Explanations/FrontWheels.md)
+    * [Front Wheels](docs/Explanations/FrontWheels.md)
     * Rear Left Wheel
     * Rear Right Wheel
 
