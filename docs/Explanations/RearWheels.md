@@ -1,4 +1,4 @@
-# Front Wheel Control
+# Rear Wheel Control
 
 This article aims to explain the firmware of the two rear wheel (RW) nodes of the EVAM 1.0 CANBus 2 system. 
 
