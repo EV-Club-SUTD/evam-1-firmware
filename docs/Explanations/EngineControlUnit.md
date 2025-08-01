@@ -37,7 +37,7 @@ The ECU runs on an Arduino Nano and the functions have been listed below.
 
 ### Overall System Description
 
-![System description diagram](img/ECUAlgo.drawio.png)
+![System description diagram](img/EngineControlUnit.drawio.png)
 
 ### Known Bugs
 
