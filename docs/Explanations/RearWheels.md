@@ -61,4 +61,4 @@ No known bugs are spotted in the code as of yet.
 * Eliminate usage of magic constants:
     * Many statements in code contains "magic constants", i.e. constants that are ill-defined or undocumented, resulting in difficulty in comprehension for anyone who is reviewing the code.
 * Misleading constant names
-    * The name LEFT_REGEN_PIN and RIGHT_REGEN_PIN do not trigger regenerative braking, but rather motor lock. Nevertheless, both regen braking and motor lock is NOT implemented in the actual code.
+    * The name REGEN_PIN does not trigger regenerative braking, but rather motor lock. Nevertheless, both regen braking and motor lock is NOT implemented in the actual code.
