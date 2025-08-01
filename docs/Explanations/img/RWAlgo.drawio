@@ -1,0 +1,217 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.7">
+  <diagram name="Page-1" id="ZGm9RxpJxoWj0WmPvvh7">
+    <mxGraphModel dx="3211" dy="517" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8N4kFgIhBX2e6mItRIPc-1" value="Main Program Algorithm" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;" parent="1" vertex="1">
+          <mxGeometry x="50" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-12" value="" style="group" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="150" y="80" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8N4kFgIhBX2e6mItRIPc-2" value="" style="rounded=1;whiteSpace=wrap;html=1;container=0;" parent="MCU3RolZ979tPYoSzu-l-12" vertex="1">
+          <mxGeometry width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8N4kFgIhBX2e6mItRIPc-3" value="Start/Reset" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;container=0;" parent="MCU3RolZ979tPYoSzu-l-12" vertex="1">
+          <mxGeometry x="20" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-13" value="" style="group" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="40" y="220" width="320" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry width="320" height="530.1818181818181" as="geometry" />
+        </mxCell>
+        <mxCell id="8N4kFgIhBX2e6mItRIPc-6" value="setup()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="10" width="60" height="28.928571428571427" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="20" y="28.928571428571427" width="280" height="163.92857142857142" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="MCU3RolZ979tPYoSzu-l-13" source="MCU3RolZ979tPYoSzu-l-2" target="MCU3RolZ979tPYoSzu-l-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-2" value="Perform setup tasks for CAN communication, including:&lt;div&gt;&lt;ul&gt;&lt;li&gt;Setting initial values for status, rear left or rear right messages, depending on which node it is&lt;/li&gt;&lt;li&gt;Resetting the CAN controller&lt;/li&gt;&lt;li&gt;Setting the bitrate and oscillator configurations&lt;/li&gt;&lt;li&gt;Setting normal mode on CAN controller&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="30" y="28.928571428571427" width="260" height="163.92857142857142" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="20" y="220" width="280" height="194.64" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-8" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="20" y="443.57142857142856" width="280" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-11" value="Send an OK signal to the CANBus" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="60" y="469.9971428571428" width="200" height="28.928571428571427" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="MCU3RolZ979tPYoSzu-l-13" source="MCU3RolZ979tPYoSzu-l-22" target="MCU3RolZ979tPYoSzu-l-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-22" value="&lt;span style=&quot;&quot;&gt;Set the pin modes for the various Arduino pins used to interface with the ESC of the wheel, such as:&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;throttle pins&lt;/li&gt;&lt;li&gt;reverse pins&lt;/li&gt;&lt;li&gt;boost pins&lt;/li&gt;&lt;li&gt;Eco pins&lt;/li&gt;&lt;li&gt;Regen pins&lt;/li&gt;&lt;li&gt;Pulse pins&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Attach the pulse pins to the interrupt service routine (ISR) pulseISR&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="30" y="220" width="260" height="194.64" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-57" value="sendStatus()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" parent="MCU3RolZ979tPYoSzu-l-13" vertex="1">
+          <mxGeometry x="110" y="450" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-48" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="1670" as="sourcePoint" />
+            <mxPoint x="760" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-50" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="1670" as="sourcePoint" />
+            <mxPoint x="760" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-51" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="770" as="sourcePoint" />
+            <mxPoint x="200" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-2" value="" style="group;rotation=90;" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="40" y="793" width="690" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry width="690" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-53" value="loop()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-54" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="10" y="30" width="370" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-58" value="readIncomingMessage()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="115" y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="VPsaro3E6v2UXJT12yXh-2" source="MCU3RolZ979tPYoSzu-l-60" target="MCU3RolZ979tPYoSzu-l-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-60" value="Read the incoming CAN message and do the following depending on the CAN ID:&lt;div&gt;&lt;ul&gt;&lt;li&gt;INDIV_WHEEL_THROTTLES_MSG_ID: read the values of the first and second bytes and set the speeds of the front left and front right throttle to their values respectively, set the left or right motors to reverse if the fifth and sixth byte is 1 respectively&lt;/li&gt;&lt;li&gt;REV_BOOST_MSG_ID: set the ecoBoost value to the second byte of the message&lt;/li&gt;&lt;li&gt;MOTOR_LOCKOUT_MSG_ID: set the motorsLocked value to the first byte of the message&lt;/li&gt;&lt;li&gt;NODE_STATUS_REQUEST_MSG_ID: Run &lt;font face=&quot;Lucida Console&quot;&gt;sendStatus()&lt;/font&gt;&amp;nbsp;to send the current state of the node&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="30" y="50" width="330" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-66" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="10" y="329" width="370" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" source="MCU3RolZ979tPYoSzu-l-67" target="5Qq3Kc5mI0Be6PeRiT5w-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCU3RolZ979tPYoSzu-l-67" value="Calculate the current speed of the wheel using m&lt;font face=&quot;Lucida Console&quot;&gt;otor.calculateRPM()&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;Apply the speeds received from the CANBus onto the motor&#39;s ESC with&amp;nbsp;&lt;font face=&quot;Lucida Console&quot;&gt;controlESCs()&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="30" y="329" width="330" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-1" target="5Qq3Kc5mI0Be6PeRiT5w-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-1" target="5Qq3Kc5mI0Be6PeRiT5w-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-1" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="15" y="496.25" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-3" value="Has there been no received message for more than 150ms and the error state is OK?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="120" y="524.25" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-5" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="430" y="508.75" width="180" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-7" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="370" y="527" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-9" target="5Qq3Kc5mI0Be6PeRiT5w-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="877" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-9" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="15" y="677" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-11" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="190" y="637" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-26" value="Change error state to GENERIC_ERROR and send it through the CAN Bus" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="450" y="512.5" width="140" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-29" value="Has there been a received message for less than 150ms and the error state is GENERIC_ERROR?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="117.5" y="707" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-30" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="440" y="699.5" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="877" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-31" value="Change error state to OK and send it through the CAN Bus" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="460" y="702" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-35" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="380" y="707" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-60" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="VPsaro3E6v2UXJT12yXh-2" source="5Qq3Kc5mI0Be6PeRiT5w-5" target="5Qq3Kc5mI0Be6PeRiT5w-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="780" as="sourcePoint" />
+            <mxPoint x="530" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5Qq3Kc5mI0Be6PeRiT5w-61" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VPsaro3E6v2UXJT12yXh-2" vertex="1">
+          <mxGeometry x="200" y="807" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MCU3RolZ979tPYoSzu-l-8" target="MCU3RolZ979tPYoSzu-l-58" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="777" />
+              <mxPoint x="235" y="777" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="VPsaro3E6v2UXJT12yXh-23" target="MCU3RolZ979tPYoSzu-l-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-23" value="Initialize 1 motorHall object simply called motor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8N4kFgIhBX2e6mItRIPc-2" target="VPsaro3E6v2UXJT12yXh-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-19" value="" style="group" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="450" y="250" width="300" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-4" value="UML of motorHall Class" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;" parent="ChqokmyqDu2fVV03voUx-19" vertex="1">
+          <mxGeometry width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-13" value="motorHall" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="ChqokmyqDu2fVV03voUx-19" vertex="1">
+          <mxGeometry x="10" y="40" width="280" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-14" value="Public Attributes:&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;motorSpeed&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;newPulse&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;pulseMicros&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;Private Attributes:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;lastPulseMicros&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;pulseInterval&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fillColor=default;" parent="VPsaro3E6v2UXJT12yXh-13" vertex="1">
+          <mxGeometry y="26" width="280" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="VPsaro3E6v2UXJT12yXh-13" vertex="1">
+          <mxGeometry y="180" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VPsaro3E6v2UXJT12yXh-16" value="&lt;div&gt;Public Methods:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;calculateRPM(&lt;/font&gt;)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;Private Methods:&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;calculateInterval()&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Lucida Console&quot;&gt;calculateRPMfromInterval()&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="VPsaro3E6v2UXJT12yXh-13" vertex="1">
+          <mxGeometry y="188" width="280" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="idLd10hTdjC_xJnlddW3-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="430" y="30" width="315" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-10" value="Rate Groups" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;fontColor=#0000FF;" parent="idLd10hTdjC_xJnlddW3-1" vertex="1">
+          <mxGeometry x="7.5" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-16" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=light-dark(#000000,#0000FF);strokeColor=#0000FF;" parent="idLd10hTdjC_xJnlddW3-1" vertex="1">
+          <mxGeometry y="40" width="315" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-15" value="&lt;font face=&quot;Helvetica&quot;&gt;Every &lt;/font&gt;&lt;font face=&quot;Lucida Console&quot;&gt;MSG_INTERVAL&lt;/font&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp;(10 miliseconds)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Lucida Console;" parent="idLd10hTdjC_xJnlddW3-1" vertex="1">
+          <mxGeometry y="40" width="240" height="28.93" as="geometry" />
+        </mxCell>
+        <mxCell id="ChqokmyqDu2fVV03voUx-17" value="&lt;font face=&quot;Lucida Console&quot;&gt;sendCanMessage()&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;Sends the data of the left wheel speed from w&lt;font face=&quot;Lucida Console&quot;&gt;heelSpeedMsg&lt;/font&gt;&amp;nbsp;to the CAN Bus via &lt;font face=&quot;Lucida Console&quot;&gt;mcp2515.sendMessage(w&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Lucida Console&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;heelSpeedMsg)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="idLd10hTdjC_xJnlddW3-1" vertex="1">
+          <mxGeometry x="12.5" y="68.93" width="290" height="91.07" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
