@@ -1,7 +1,6 @@
 # Engine Control Unit (ECU)
 
 This article aims to explain the design of the Engine Control Unit (ECU) subsystem in the EVAM 1.0 CANBus 2 system.
-> Currently need help with describing the interface between ECU and E Stop
 
 ## Background
 
