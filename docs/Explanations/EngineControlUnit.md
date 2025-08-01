@@ -30,8 +30,7 @@ The ECU runs on an Arduino Nano and the functions have been listed below.
     * ECU interfaces with the other nodes using CAN Bus interface.
     * CAN Bus frequency is set to 500Kb/s
 * **Interface 3 | Input | E Stop Pin**
-    * Digital Pin 3: Provides a 5V signal in the event that E-stop button is pressed and updates the E stop status. This status is checked by the ECU.
-    * It is important to note that while the pin is programmed, E stop functions are __not__ invoked
+    * Digital Pin 3: Provides a 5V signal in the event that E-stop button is pressed and updates the E stop status. This status is checked by the ECU. **(Pin not used)**
 
 
 ## Implementation
