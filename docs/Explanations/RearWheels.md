@@ -37,9 +37,9 @@ In the event of an error, the node will automatically send an error message thro
     * Pulse / Digital Input D2: Detects pulses from the left motor which is used to calculate the motor speed
     * Acceleration or Throttle / Digital Output D5: Sends a PWM signal to the ESC throttle to control the speed of the left wheel
     * Reverse / Digital Output D7: Pin to control the direction of the motor, Active Low to trigger reverse direction
-    * Boost / Digital Output A3: Activates the boost mode for the ESC to provide a sudden increase in speed, Active Low to trigger **(Pin not used)**
-    * Eco / Digital Output A5: Activates the eco mode for the ESC to conserve energy usage, Active Low to trigger **(Pin not used)**
-    * Lock / Digital Output A1: Electronic Lock for the ESC to prevent the car from moving, Active Low to trigger **(Pin not used)**
+    * Boost / Digital Output D4: Activates the boost mode for the ESC to provide a sudden increase in speed, Active Low to trigger **(Pin not used)**
+    * Eco / Digital Output D5: Activates the eco mode for the ESC to conserve energy usage, Active Low to trigger **(Pin not used)**
+    * Lock / Digital Output D8: Electronic Lock for the ESC to prevent the car from moving, Active Low to trigger **(Pin not used)**
 
 
 ## Implementation
