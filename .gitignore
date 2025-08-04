@@ -1,3 +1,6 @@
+# Drawio temporary files
+*.drawio.bkp
+
 # General
 .DS_Store
 .AppleDouble
