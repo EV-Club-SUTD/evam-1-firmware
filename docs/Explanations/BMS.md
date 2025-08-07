@@ -4,8 +4,11 @@ This article aims to explain the firmware of the Battery Management System (BMS)
 ## Background
 The functions of the BMS node are as follows: 
 
-1. Relay certain information from the Battery's internal BMS CAN Bus to the EVAM CAN Bus. 
-2. Monitor the voltages of the 5V and the 12V rail and publishes this information to CANBus.
+1. Relay information from the Battery's internal BMS CAN Bus to the EVAM CAN Bus. This information includes:
+   - Battery voltage
+   - Battery status
+   - Node status (where it is OK, offline or timeout)
+3. Monitor the voltages of the 5V and the 12V rail and publishes this information to CANBus.
 
 Note: 
 The current implementation is not millis() overflow protected. 
@@ -19,7 +22,7 @@ Designed to run on an Arduino Nano (ARDUINO_AVR_NANO)
 * **Interface 1 | Input | Battery CAN Bus**
     * Operates at 250kb/s
     * Receives battery status messages (CAN IDs: 0x99000013 and 0x99000053)
-    * Data is decoded and stored in a buffer to be relayed to the EVAM CAN bus
+    * Data is decoded and stored into local CAN frame to be relayed to the EVAM CAN bus
 
 * **Interface 2 | Output | EVAM CAN Bus**
     * Operates at 500kb/s
