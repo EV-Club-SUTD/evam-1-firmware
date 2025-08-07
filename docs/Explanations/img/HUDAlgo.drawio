@@ -1,0 +1,101 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" scale="2" border="0" version="27.0.9">
+  <diagram name="Page-1" id="xcAhWBtiVjObIqOwqNsL">
+    <mxGraphModel dx="781" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-20" value="&lt;font face=&quot;Courier New&quot;&gt;loop()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=8;spacingRight=8;" parent="1" vertex="1">
+          <mxGeometry x="69.91" y="910" width="320" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-17" value="&lt;font face=&quot;Courier New&quot;&gt;setup()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=8;spacingRight=8;" parent="1" vertex="1">
+          <mxGeometry x="69.91" y="120" width="320" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="784bLGKqiE0oy2VdMyuQ-1" target="ZewMjAyknEb1WVtQAOJd-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-1" value="&lt;font face=&quot;Courier New&quot;&gt;canSetup()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Performs setup tasks for CAN communications, including:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Setting communication speed to 1Mbps&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Setting pin numbers&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Initialising incoming message queue&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Initialising CAN module&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="150" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Main program algorithm&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" parent="1" vertex="1">
+          <mxGeometry x="57.41" y="10" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="784bLGKqiE0oy2VdMyuQ-7" target="784bLGKqiE0oy2VdMyuQ-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-7" value="&lt;font&gt;Start/Reset&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="169.91" y="60" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-27" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Rate groups&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;fontColor=#3333FF;" parent="1" vertex="1">
+          <mxGeometry x="425" y="10" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-28" value="Every&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;DEBOUNCE_INTERVAL&amp;nbsp;&lt;/font&gt;(100&amp;nbsp;milliseconds) AND if &lt;font face=&quot;Courier New&quot;&gt;reverseISRFlag&lt;/font&gt; is &lt;font face=&quot;Courier New&quot;&gt;true&lt;/font&gt;:" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=#3333FF;align=left;spacingLeft=8;spacingRight=8;" parent="1" vertex="1">
+          <mxGeometry x="440" y="120" width="320" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="784bLGKqiE0oy2VdMyuQ-29" value="&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;ESP32Can.CANWriteFrame(&amp;amp;reverseMsg);&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Reads the reverse signal pin from the drive selector using &lt;font face=&quot;Courier New&quot;&gt;digitalRead&lt;/font&gt; and writes the current state of the reverser to the CAN bus&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="165" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZewMjAyknEb1WVtQAOJd-2" target="ZewMjAyknEb1WVtQAOJd-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-2" value="&lt;font face=&quot;Courier New&quot;&gt;initMessageData()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Set all CAN messages to their nominal initial values&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="330" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZewMjAyknEb1WVtQAOJd-3" target="ZewMjAyknEb1WVtQAOJd-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-3" value="&lt;font face=&quot;Courier New&quot;&gt;setupBLE()&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;setStatusCharacteristic()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;setBatteryCharacteristic()&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Setup all Bluetooth services, characteristics, callbacks, descriptors and start broadcasting its presence.&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Afterwards, set initial status and battery variables, and push that data to the phones.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="420" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZewMjAyknEb1WVtQAOJd-4" target="ZewMjAyknEb1WVtQAOJd-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-4" value="&lt;font face=&quot;Courier New&quot;&gt;setSwitchesGPIO()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Set all input and output pins to their correct pin modes (&lt;font face=&quot;Courier New&quot;&gt;INPUT&lt;/font&gt; or &lt;font face=&quot;Courier New&quot;&gt;OUTPUT&lt;/font&gt;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="620" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ZewMjAyknEb1WVtQAOJd-5" target="ZewMjAyknEb1WVtQAOJd-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-5" value="&lt;font face=&quot;Courier New&quot;&gt;attachInterrupts()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Set lighting and reverse pins to attach their respective interrupt functions&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="710" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZewMjAyknEb1WVtQAOJd-6" target="IVXdb9A3EyJ7HtGwM6Vm-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZewMjAyknEb1WVtQAOJd-6" value="&lt;font face=&quot;Courier New&quot;&gt;requestCanNodeStatuses()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Request statuses from all CAN nodes&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="89.91" y="800" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-1" value="Every&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;CORE_DATA_REFRESH_INTERVAL&amp;nbsp;&lt;/font&gt;(16&amp;nbsp;&lt;div&gt;milliseconds):&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=#3333FF;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="330" width="320" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-2" value="&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;setBatteryCharacteristic();&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;setCoreCharacteristic();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Sets the battery and core Bluetooth characteristics, which contain the following data:&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Core&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;&lt;ul&gt;&lt;li&gt;Speed: car velocity 0-255km/h&lt;/li&gt;&lt;li&gt;Throttle % 0-100%&lt;/li&gt;&lt;li&gt;Brake % 0-100%&lt;/li&gt;&lt;li&gt;Reverse mode boolean&lt;/li&gt;&lt;li&gt;Calibrated steering angle (centre=128)&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;b&gt;Battery&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Battery State of Charge %&lt;/li&gt;&lt;li&gt;Battery Voltage&lt;/li&gt;&lt;li&gt;Battery Current (part 1, 8-bits)&lt;/li&gt;&lt;li&gt;Battery Current (part 2, 8-bits)&lt;/li&gt;&lt;li&gt;Battery Temperature&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="280" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-3" value="Every&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;MOTOR_LOCK_MSG_REFRESH_INTERVAL&amp;nbsp;&lt;/font&gt;(1000&amp;nbsp;&lt;div&gt;milliseconds):&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;strokeColor=#3333FF;align=left;spacingLeft=8;spacingRight=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="750" width="320" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-4" value="&lt;div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;checkSendMotorLockout();&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;requestCanNodeStatuses();&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;Sends the motor lockout CAN message if the motor lockout pin is active (i.e. &lt;font face=&quot;Courier New&quot;&gt;digitalRead&lt;/font&gt; returns &lt;font face=&quot;Courier New&quot;&gt;HIGH&lt;/font&gt;).&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 8px; margin-right: 8px;&quot;&gt;After which, request for CAN node statuses from all other CAN nodes.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="800" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVXdb9A3EyJ7HtGwM6Vm-5" target="IVXdb9A3EyJ7HtGwM6Vm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-5" value="&lt;font face=&quot;Courier New&quot;&gt;sendButtonCanMessages()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Checks if &lt;font face=&quot;Courier New&quot;&gt;lightingISRFlag&lt;/font&gt; is true (i.e. the light switch has changed state), and if yes, send CAN messages to the lighting nodes.&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Refer to rate group&amp;nbsp;&lt;span style=&quot;background-color: transparent; text-align: center;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;DEBOUNCE_INTERVAL&lt;/font&gt; for reverser behaviour.&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="89.91" y="940" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVXdb9A3EyJ7HtGwM6Vm-6" target="IVXdb9A3EyJ7HtGwM6Vm-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="1350" />
+              <mxPoint x="410" y="1350" />
+              <mxPoint x="410" y="900" />
+              <mxPoint x="230" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IVXdb9A3EyJ7HtGwM6Vm-6" value="&lt;font face=&quot;Courier New&quot;&gt;checkIncomingCanMessages()&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;Checks for incoming CAN messages (specifically, only the messages for statuses) on the CAN bus and if there is an incoming value, send the value to the phone over Bluetooth via&amp;nbsp;&lt;font face=&quot;Courier New&quot;&gt;setStatusCharacteristic()&lt;/font&gt;.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; margin-left: 20px; margin-right: 16px; margin-top: 0px;&quot;&gt;In addition, it also checks for core characteristic data incoming from the CAN bus (such as speed, throttle, etc.), and changes the variables, but does NOT send the values over Bluetooth.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="92.41" y="1090" width="280" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

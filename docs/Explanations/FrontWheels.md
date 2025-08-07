@@ -33,14 +33,23 @@ In the event of an error, the node will automatically send an error message thro
     * Prints debug messages at 115200 baud
 
 * **Interface 3 | Input/Output | Left Motor ESC interface**
-    * FW interfaces with the left motor ESC
-    * Detects pulses from the left motor which is used to calculate the motor speed
-    * Sends a PWM signal to the ESC throttle to control the speed of the left wheel
-    * Also controls the boost, eco mode, lock and direction of the ESC (current pins for boost, eco, lock and reverse are set as input values, making them floating as they are not utilized yet)
+    * FW interfaces with the left motor ESC with a 6 pin digital interface
+    * Pulse / Digital Input D2: Detects pulses from the left motor which is used to calculate the motor speed
+    * Acceleration or Throttle / Digital Output D5: Sends a PWM signal to the ESC throttle to control the speed of the left wheel
+    * Reverse / Digital Output D7: Pin to control the direction of the motor, Active Low to trigger reverse direction
+    * Boost / Digital Output A3: Activates the boost mode for the ESC to provide a sudden increase in speed, Active Low to trigger **(Pin not used)**
+    * Eco / Digital Output A5: Activates the eco mode for the ESC to conserve energy usage, Active Low to trigger **(Pin not used)**
+    * Lock / Digital Output A1: Electronic Lock for the ESC to prevent the car from moving, Active Low to trigger **(Pin not used)**
 
 * **Interface 4 | Input/Output | Right Motor ESC interface**
-    * FW interfaces with the right motor ESC
+    * FW interfaces with the right motor ESC with a 6 pin digital interface
     * Contains the same inputs and outputs as outlined in interface 3 above, but for the right motor instead
+    * Pulse / Digital Input D3: Detects pulses from the left motor which is used to calculate the motor speed
+    * Acceleration or Throttle / Digital Output D6: Sends a PWM signal to the ESC throttle to control the speed of the left wheel
+    * Reverse / Digital Output D8: Pin to control the direction of the motor, Active Low to trigger reverse direction
+    * Boost / Digital Output A2: Activates the boost mode for the ESC to provide a sudden increase in speed, Active Low to trigger **(Pin not used)**
+    * Eco / Digital Output A4: Activates the eco mode for the ESC to conserve energy usage, Active Low to trigger **(Pin not used)**
+    * Lock / Digital Output A0: Electronic Lock for the ESC to prevent the car from moving, Active Low to trigger **(Pin not used)**
 
 
 ## Implementation
@@ -58,6 +67,8 @@ No known bugs are spotted in the code as of yet.
 ## Improvements and future plans
 
 * Implementation of Reverse, Eco Mode, Lock and Boost
-    * The current firmware does not utilize the boost, eco mode, lock and reverse pins of the ESC, and are currently set as floating pins. Future iterations may look into implementing these features. 
+    * The current firmware does not utilize the boost, eco mode, and lock pins of the ESC, and are currently set as floating pins. Future iterations may look into implementing these features. 
 * Eliminate usage of magic constants:
-    * Many statements in code contains "magic constants", i.e. constants that are ill-defined or undocumented, resulting in difficulty in comprehension for anyone who is reviewing the code. 
+    * Many statements in code contains "magic constants", i.e. constants that are ill-defined or undocumented, resulting in difficulty in comprehension for anyone who is reviewing the code.
+* Misleading constant names
+    * The name LEFT_REGEN_PIN and RIGHT_REGEN_PIN do not trigger regenerative braking, but rather motor lock. Nevertheless, both regen braking and motor lock is NOT implemented in the actual code.

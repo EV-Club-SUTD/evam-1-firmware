@@ -6,7 +6,7 @@ Ported to Arduino ESP32 by Evandro Copercini
 updated by chegewara)
 
 FUNCTIONS:
-- Reads CAN messages from car and updates BLE charactersitics (see excel)
+- Reads CAN messages from car and updates BLE characteristics (see excel)
 -- Status of CAN nodes
 -- Code data such as speed, battery %, current, etc
 - Reads lighting data from BLE and updates car CAN
