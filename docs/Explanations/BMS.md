@@ -4,7 +4,7 @@ This article aims to explain the firmware of the Battery Management System (BMS)
 ## Background
 The functions of the BMS node are as follows: 
 
-1. Relay certain information (what info?) from the Battery's internal BMS CAN Bus to the EVAM CAN Bus. 
+1. Relay certain information from the Battery's internal BMS CAN Bus to the EVAM CAN Bus. 
 2. Monitor the voltages of the 5V and the 12V rail and publishes this information to CANBus.
 
 Note: 
