@@ -43,7 +43,7 @@ Designed to run on an Arduino Nano (ARDUINO_AVR_NANO)
 
 ### Overall system description 
 
-(flowchart in progress)
+![System description diagram](img/BatteryManagementSystem.drawio.png)
 
 ### Known Bugs
 
