@@ -48,10 +48,7 @@ For other documentation, please refer to EVAM internal OneDrive for further docu
 * [Battery Management System](docs/Explanations/ThrottlePositionSensor.md)
 * [Engine Control Unit](docs/Explanations/EngineControlUnit.md)
 * [Battery Management System](docs/Explanations/ThrottlePositionSensor.md)
-* Wheel Units
-    * [Front Wheels](docs/Explanations/FrontWheels.md)
-    * Rear Left Wheel
-    * Rear Right Wheel
+* [Wheel Units](docs/Explanations/FrontandRearWheels.md)
 
 
 ### References
