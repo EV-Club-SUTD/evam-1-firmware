@@ -153,7 +153,7 @@ void rPulseISR(){
  * @param   pin     The pin to toggle between float and low
  * @param   state   0 = float, 1 = low(active low)
  */
-void setPinLowFLoat(uint8_t pin, bool state){
+void setPinLowFloat(uint8_t pin, bool state){
     if(state == 0){ //set to FLOAT (high-Z)
         pinMode(pin, INPUT);
     }
@@ -172,8 +172,8 @@ void controlESCs(){
     */
     analogWrite(LEFT_THROTTLE_PIN, flThrottle);
     analogWrite(RIGHT_THROTTLE_PIN, frThrottle);
-    setPinLowFLoat(LEFT_REVERSE_PIN, flThrottleRev);
-    setPinLowFLoat(RIGHT_REVERSE_PIN, frThrottleRev);
+    setPinLowFloat(LEFT_REVERSE_PIN, flThrottleRev);
+    setPinLowFloat(RIGHT_REVERSE_PIN, frThrottleRev);
 }
 
 void setup() {
@@ -200,14 +200,14 @@ void setup() {
     //Pins set to INPUT so that they are floating
     pinMode(LEFT_THROTTLE_PIN, OUTPUT);
     pinMode(RIGHT_THROTTLE_PIN, OUTPUT);
-    setPinLowFLoat(LEFT_REVERSE_PIN, 0);
-    setPinLowFLoat(RIGHT_REVERSE_PIN, 0);
-    setPinLowFLoat(LEFT_BOOST_PIN, 0);
-    setPinLowFLoat(RIGHT_BOOST_PIN, 0);
-    setPinLowFLoat(LEFT_ECO_PIN, 0);
-    setPinLowFLoat(RIGHT_ECO_PIN, 0);
-    setPinLowFLoat(LEFT_REGEN_PIN, 0);
-    setPinLowFLoat(RIGHT_REGEN_PIN, 0);
+    setPinLowFloat(LEFT_REVERSE_PIN, 0);
+    setPinLowFloat(RIGHT_REVERSE_PIN, 0);
+    setPinLowFloat(LEFT_BOOST_PIN, 0);
+    setPinLowFloat(RIGHT_BOOST_PIN, 0);
+    setPinLowFloat(LEFT_ECO_PIN, 0);
+    setPinLowFloat(RIGHT_ECO_PIN, 0);
+    setPinLowFloat(LEFT_REGEN_PIN, 0);
+    setPinLowFloat(RIGHT_REGEN_PIN, 0);
 
     pinMode(LEFT_PULSE_PIN, INPUT);
     pinMode(RIGHT_PULSE_PIN, INPUT);

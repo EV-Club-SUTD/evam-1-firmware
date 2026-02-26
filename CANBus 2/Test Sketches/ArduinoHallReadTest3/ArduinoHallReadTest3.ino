@@ -14,7 +14,7 @@ uint8_t throttle = 0;
 motorHall lMotor;
 motorHall rMotor;
 
-void setPinLowFLoat(uint8_t pin, bool state){
+void setPinLowFloat(uint8_t pin, bool state){
     if(state == 0){ //set to FLOAT (high-Z)
         pinMode(pin, INPUT);
     }
@@ -36,9 +36,9 @@ void rPulseISR(){
 
 void setup() {
   // put your setup code here, to run once:
-    setPinLowFLoat(REVERSE_PIN, 0);
-    setPinLowFLoat(ECO_PIN, 0);
-    setPinLowFLoat(BOOST_PIN, 0);
+    setPinLowFloat(REVERSE_PIN, 0);
+    setPinLowFloat(ECO_PIN, 0);
+    setPinLowFloat(BOOST_PIN, 0);
     pinMode(ACCELERATOR_PIN, INPUT);
     pinMode(THROTTLE_PIN, OUTPUT);
 

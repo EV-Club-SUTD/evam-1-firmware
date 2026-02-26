@@ -52,6 +52,7 @@ uint8_t throttle = 0;
 bool throttleRev = 0;
 uint8_t ecoBoost = 0;   //0 = normal, 1 = eco, 2 = boost
 bool motorsLocked = 0;
+bool resetState = false; // Reset the pin states after motor lockout signal, to fix issue with right wheel
 
 //to update CANBus on the status of the node
 void sendStatus(nodeErrorType status = errorState){
@@ -87,7 +88,8 @@ void readIncomingMessages(){
             #endif  //DEBUG
         }
         if(canMsg.can_id == MOTOR_LOCKOUT_MSG_ID){ //Motors Locked out
-            motorsLocked = canMsg.data[0]; 
+            motorsLocked = canMsg.data[0];
+            resetState = true;
             #ifdef DEBUG
             Serial.println("Motors: " + (motorsLocked == true) ? "locked" : "unlocked");
             #endif  //DEBUG
@@ -130,7 +132,7 @@ void pulseISR(){
  * @param   pin     The pin to toggle between float and low
  * @param   state   0 = float, 1 = low(active low)
  */
-void setPinLowFLoat(uint8_t pin, bool state){
+void setPinLowFloat(uint8_t pin, bool state){
     if(state == 0){ //set to FLOAT (high-Z)
         pinMode(pin, INPUT);
     }
@@ -147,7 +149,16 @@ void controlESCs(){
     }
     */
     analogWrite(THROTTLE_PIN, throttle);
-    setPinLowFLoat(REVERSE_PIN, throttleRev);
+    setPinLowFloat(REVERSE_PIN, throttleRev);
+
+    if (resetState) {
+        pinMode(THROTTLE_PIN, OUTPUT);
+        setPinLowFloat(REVERSE_PIN, 0);
+        setPinLowFloat(BOOST_PIN, 0);
+        setPinLowFloat(ECO_PIN, 0);
+        setPinLowFloat(REGEN_PIN, 0);
+        resetState = false;
+    }
 }
 
 void setup() {
@@ -166,10 +177,10 @@ void setup() {
     //Pins Setup
     //Pins set to INPUT so that they are floating
     pinMode(THROTTLE_PIN, OUTPUT);
-    setPinLowFLoat(REVERSE_PIN, 0);
-    setPinLowFLoat(BOOST_PIN, 0);
-    setPinLowFLoat(ECO_PIN, 0);
-    setPinLowFLoat(REGEN_PIN, 0);
+    setPinLowFloat(REVERSE_PIN, 0);
+    setPinLowFloat(BOOST_PIN, 0);
+    setPinLowFloat(ECO_PIN, 0);
+    setPinLowFloat(REGEN_PIN, 0);
 
     pinMode(PULSE_PIN, INPUT);
     attachInterrupt(digitalPinToInterrupt(PULSE_PIN), pulseISR, FALLING);

@@ -131,7 +131,7 @@ void pulseISR(){
  * @param   pin     The pin to toggle between float and low
  * @param   state   0 = float, 1 = low(active low)
  */
-void setPinLowFLoat(uint8_t pin, bool state){
+void setPinLowFloat(uint8_t pin, bool state){
     if(state == 0){ //set to FLOAT (high-Z)
         pinMode(pin, INPUT);
     }
@@ -148,7 +148,7 @@ void controlESCs(){
     }
     */
     analogWrite(THROTTLE_PIN, throttle);
-    setPinLowFLoat(REVERSE_PIN, throttleRev);
+    setPinLowFloat(REVERSE_PIN, throttleRev);
 }
 
 void setup() {
@@ -167,10 +167,10 @@ void setup() {
     //Pins Setup
     //Pins set to INPUT so that they are floating
     pinMode(THROTTLE_PIN, OUTPUT);
-    setPinLowFLoat(REVERSE_PIN, 0);
-    setPinLowFLoat(BOOST_PIN, 0);
-    setPinLowFLoat(ECO_PIN, 0);
-    setPinLowFLoat(REGEN_PIN, 0);
+    setPinLowFloat(REVERSE_PIN, 0);
+    setPinLowFloat(BOOST_PIN, 0);
+    setPinLowFloat(ECO_PIN, 0);
+    setPinLowFloat(REGEN_PIN, 0);
 
     pinMode(PULSE_PIN, INPUT);
     attachInterrupt(digitalPinToInterrupt(PULSE_PIN), pulseISR, FALLING);

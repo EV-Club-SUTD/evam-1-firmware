@@ -1,7 +1,7 @@
 #ifndef _RW_CONFIG_H_
 #define _RW_CONFIG_H_
 
-#define DEBUG   //debug mode prints imformation to terminal
+// #define DEBUG   //debug mode prints imformation to terminal
 
 //Connections to ESC
 //Updated based on PCB
